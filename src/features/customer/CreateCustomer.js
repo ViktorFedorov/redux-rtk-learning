@@ -9,7 +9,7 @@ function Customer() {
   const dispatch = useDispatch()
 
   function handleClick() {
-    dispatch(createCustomer(fullName, nationalId))
+    dispatch(createCustomer({ fullName, nationalId }))
   }
 
   return (
